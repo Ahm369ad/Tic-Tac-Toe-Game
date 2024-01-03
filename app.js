@@ -22,11 +22,12 @@ boxes.forEach((box) => {
   box.addEventListener("click", () => {
     if (turn0) {
       //PlayerO
-      box.innerText = "O";
       box.style.color = "darkblue";
+      box.innerText = "O";
       turn0 = false;
     } else {
       //PlayerX
+      box.style.color = "red";
       box.innerText = "X";
       turn0 = true;
     }
